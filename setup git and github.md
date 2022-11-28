@@ -1,3 +1,4 @@
+## Setting up SSH Key for Git and GitHub
 - First make sure you have git.
 - Make sure you have a github account
 - Add your github email and username to your local git
@@ -90,11 +91,12 @@ to github
  $ pbcopy < ~/.ssh/id_ed25519.pub
  ```
 ---------------------------------------
-- With the key on our clipboard, we will go back to our github 
+- With the key copied to our clipboard, we will go back to our github 
  settings page > SSH and GPG Keys, and paste the content in the 
  key field. Enter the Name you would want to use to identify 
  your machine on github. select authentication as the key-type
- and click add. NB: Please make sure there is no whitespace before
+ and click add. <br>
+ NB: Please make sure there is no whitespace before
  or after the key when copying or pasting.
 
 - We have successfully added the SSh key to github. Let's test to see 
@@ -104,8 +106,11 @@ to github
  ```
  since this our first time using this machine to ssh into github,
  we will encounter a warning screen. Type yes and press enter.
- a message like this should be returned
- `Hi username! You've successfully authenticated, but GitHub 
- does not provide shell access.`. Any response apart from this 
+ A message like this should be returned
+ ```bash
+ Hi username! You've successfully authenticated, but GitHub 
+ does not provide shell access.
+ ``` 
+ Any response apart from this 
  means there has been an error, either with setting up the key or
  internet problem.
