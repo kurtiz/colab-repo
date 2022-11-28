@@ -82,6 +82,7 @@ to github
  ```bash
  $ cat ~/.ssh/id_ed25519.pub
  ```
+ - this will output the content of the file, select and copy it
 ---------------------------------------
 ## macos users
 ---------------------------------------
