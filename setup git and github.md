@@ -1,4 +1,4 @@
-- First make sure you have git and github installed.
+- First make sure you have git.
 - Make sure you have a github account
 - Add your github email and username to your local git
  configuration 
@@ -14,14 +14,14 @@
  this will output all the config variables that have been set
 
 - Since Github no longer supports password authentication 
- over git, we will have to setup ssh key work serve as 
- the means of aunthentication.
+ over git, we will have to setup ssh key which serves as 
+ the means of authentication.
 - Login into your github account in the browser and navigate 
  to the settings page.
 - On the settings page, select SSH and GPG keys
-- click on new SSH key
-- Github will provide you with a form with three input fields
- the first one is a "Title"(This is pretty much the name or 
+- Click on new SSH key
+- Github will provide you with a form with three input fields.
+ The first one is a "Title"(This is pretty much the name or 
  tag you would use to identify the machine which will use this
  key. It helps with managing the keys, especially if they're 
  many), the second one is "key type" (it used to determine 
@@ -71,20 +71,19 @@ to github
  added
 - Let's copy the content of the file to our 
  clipboard.
-windows Users
+ ## windows Users
 --------------------------------------
  ```bash
  $ clip < ~/.ssh/id_ed25519.pub
  ```
 --------------------------------------
-linux users
+## linux users
 --------------------------------------
  ```bash
  $ cat ~/.ssh/id_ed25519.pub
  ```
-select and copy the content
 ---------------------------------------
-macos users
+## macos users
 ---------------------------------------
  ```bash
  $ pbcopy < ~/.ssh/id_ed25519.pub
